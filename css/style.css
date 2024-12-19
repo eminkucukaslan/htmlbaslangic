@@ -1,0 +1,207 @@
+body {
+    background-color: #e0e9e4;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh; /* Sayfa altı doldurma için */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+header{
+    position: fixed;
+    z-index: 1001;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    height: 183px;
+    background-color: #8ca59c;
+    box-shadow: 0 4px 8px rgba(22, 66, 60, 0.555); /* Gölge en büyük sınırda */
+}
+  
+
+.navbar {
+    background-color: #e0e9e4;
+    border: 2px solid #11322b; /* En büyük sınır */
+    border-radius: 10px; /* Köşe yuvarlama */
+    box-shadow: 0 4px 8px rgba(22, 66, 60, 0.555); /* Gölge en büyük sınırda */
+    display: flex;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    justify-content: center;
+    width: 80%; /* Sayfanın genişliğine göre esnek */
+    max-width: 806px; /* Maksimum genişlik */
+    margin: 10px auto 0; /* Ortalamak için */
+    
+    
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.navbar li {
+    flex: 1;
+    
+    border-right: 1px solid #000000; /* İç sınırlar */
+}
+
+.navbar li:last-child {
+    border-right: none; /* Son öğe için sınır yok */
+}
+
+.navbar a {
+    font-weight: bold;
+    color: #11322b;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-weight: bold; /* Metin kalın */
+    transition: background-color 0.3s ease;
+    border-radius: 5px; /* Köşe yuvarlama */
+}
+
+.navbar a:hover {
+    background-color: #6A9C89;
+    color: #e0e9e4;
+}
+.logo {
+    display: flex;
+    justify-content: center; /* Ortalamak için */
+    margin-bottom: 5px; /* Navbar ile arasına boşluk */
+}
+
+.logo img {
+   /*  max-width: 100px; Logo boyutunu kontrol et */
+    height: auto;
+}
+#logo3 {
+    margin-left: 100px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+/*MAIN*/
+main{
+    padding-top: 15px;
+    padding-bottom: 15px;   
+    min-height: 200px;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 900px;
+    color: black;
+    font-size: 120%;
+    font-weight: bolder;
+}
+.banner{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-color: rgb(0, 0, 255);
+    white-space: nowrap;
+    font-size: 0;
+    overflow: hidden;
+    border-radius: 30px;
+    box-shadow: 0px 4px 8px rgba(22, 66, 60, 0.616); /* Gölge en büyük sınırda */
+    margin-top: 180px;
+
+}
+.bannerFrame{
+    position: relative;
+    left: 0%;
+    top: 0px;
+    height: 350px;
+    width: auto;
+    transition: left 1.2s ease;
+    
+}
+.bannerFrame div{
+    display: inline-block;
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.bannerButtons{
+    position: absolute;
+    left: 44%;
+    bottom: 10px;
+    width: auto;
+    height: 40px;
+}
+.bannerButtons ul{
+    width: auto;
+    margin: 0px;
+    padding: 0px;
+}
+.bannerButtons ul li{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: rgba(255,255,255,0.5);
+    list-style: none;
+    color: black;
+    box-shadow: 0px 4px 8px rgba(22, 66, 60, 0.616); /* Gölge en büyük sınırda */
+}
+.bannerButtons ul li:hover{
+    background-color: #6A9C89;
+}
+.title{
+    font-size: 80%;
+    margin: 30px 0 10px 0;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    font-weight: bold;
+    background-color: hsl(158, 12%, 60%);
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+.content{
+    font-weight: normal;
+    color: #666;
+}
+.contactForm{
+    width: 70%;
+    max-width: 700px;
+    margin: auto;
+    padding-top: 30px;
+}
+.contactForm > div{
+    text-align: center;
+}
+.contactForm input{
+    font-size: 18pt;
+    width: 100%;
+    padding: 10px 10px;
+    box-sizing: border-box;
+}
+.contactForm textarea{
+    width: 100%;
+    min-height: 100px;
+}
+.footer{
+    font-weight: bolder;
+}
+footer{
+    position: fixed;
+    z-index: 1001;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: white;
+    background-color: #8da59c;
+    box-shadow: 0px 0px 10px 0px rgba(22, 66, 60, 0.616);
+    font-weight: bolder;
+}
